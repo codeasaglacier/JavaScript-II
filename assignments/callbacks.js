@@ -56,11 +56,7 @@ multiplyNums(2,3, function(product){
 function contains(item, list, cb) {
 //   // contains checks if an item is present inside of the given array/list.
 //   // Pass true to the callback if it is, otherwise pass false.
-if(list.includes(item)){
-  return (true)
-} else {
-  return(false)
-}
+return cb(list.includes(item))
 }
 contains(3, [1,2,3], function(present){
   console.log(present)
